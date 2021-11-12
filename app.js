@@ -7,7 +7,14 @@ för diven med id answer-one när man klickar på knappen
 let blue = false;
 
 function taskOne() {
-    alert("Replace this alert with a solution");
+    if (blue === false) {
+        document.getElementById("answer-one").style.backgroundColor = "red";
+        blue = true;
+    } else {
+        document.getElementById("answer-one").style.backgroundColor = "blue";
+        blue = false;
+    }
+
 }
 
 /*
