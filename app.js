@@ -37,7 +37,15 @@ inte är helg ska du trigga en alert med meddelandet "FML"
 */
 
 function taskThree() {
-    alert("Replace this alert with a solution");
+    const d = new Date();
+    let dayOfTheWeek = d.getDay();
+
+    if (dayOfTheWeek === 6 || dayOfTheWeek === 0) {
+        alert("Woohooo it's weekend!")
+    } else {
+        alert("FML");
+    }
+
 }
 
 /*
