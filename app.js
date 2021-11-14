@@ -26,7 +26,8 @@ läggas till i numbers-arrayen, innan arrayen renderas ut i diven med id answer-
 const numbers = [234, 986, 784];
 
 function taskTwo() {
-    alert("Replace this alert with a solution");
+
+    alert("Not finished." + numbers);
 }
 
 /*
@@ -56,8 +57,15 @@ ska sedan visas i en alert-box utefter följande: Produkten är: [RESULTATET], a
 eller båda värdena inte är ett nummer ska en alertbox med meddelandet "Jag kan bara multiplicera numer" triggas
 */
 
-function multiplier(valueOne, valueTwo) {
-    alert("Replace this alert with a solution");
+function multiplier(valueOne, valueTwo, sum) {
+    valueOne = 10;
+    valueTwo = 10;
+    sum = valueOne * valueTwo;
+    if (isNaN(valueOne) || isNaN(valueTwo)) {
+        alert("Jag kan bara multiplicera nummer.");
+    } else {
+        alert("Produkten är [" + sum + "]");
+    }
 }
 
 function taskFour() {
@@ -79,9 +87,16 @@ Skräp: apelsin, päron
 const fruits = ["banan", "äpple", "citron", "apelsin", "päron"];
 const eatable = [];
 const trash = [];
+for (let i = 0; i < fruits.length; i++) {
+    if (fruits[i] === "apelsin" || fruits[i] === "päron") {
+        trash.push("apelsin", "päron");
+    } else {
+        eatable.push(fruits[i]);
+    }
+}
 
 function taskFive() {
-    alert("Replace this alert with a solution");
+    alert("Ätligt: " + eatable + "\nSkräp: " + trash);
 }
 
 /*
