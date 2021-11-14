@@ -89,14 +89,14 @@ const eatable = [];
 const trash = [];
 for (let i = 0; i < fruits.length; i++) {
     if (fruits[i] === "apelsin" || fruits[i] === "päron") {
-        trash.push("apelsin", "päron");
+        trash.push(fruits[i]);
     } else {
         eatable.push(fruits[i]);
     }
 }
 
 function taskFive() {
-    alert("Ätligt: " + eatable + "\nSkräp: " + trash);
+    document.getElementById("answer-five").innerHTML = "<b>Ätligt: " + eatable + "<br>" + "Skräp: " + trash + "</b>";
 }
 
 /*
