@@ -25,9 +25,12 @@ läggas till i numbers-arrayen, innan arrayen renderas ut i diven med id answer-
 
 const numbers = [234, 986, 784];
 
-function taskTwo() {
 
-    alert("Not finished." + numbers);
+
+function taskTwo() {
+    let randomNumGenerator = Math.floor(Math.random() * 1001) + 101;
+    numbers.push(randomNumGenerator);
+    document.getElementById("answer-two").innerHTML = numbers;
 }
 
 /*
@@ -124,10 +127,15 @@ const persons = [
     { name: "Karin", age: 29, married: false },
 ];
 
+
 const married = [];
 const notMarried = [];
 const overThirty = [];
 const underThirty = [];
+
+
+
+
 
 function taskSix() {
     alert("Replace this alert with a solution");
