@@ -168,7 +168,10 @@ efter att tre sekunder har gått ska diven visas som vanligt igen
 */
 
 function taskEight() {
-    alert("Replace this alert with a solution");
+    document.getElementById("card-eight").style.display = "none";
+    setTimeout(() => {
+        document.getElementById("card-eight").style.display = "inline";
+    }, 3000);
 }
 
 /*
