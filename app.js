@@ -28,7 +28,7 @@ const numbers = [234, 986, 784];
 
 
 function taskTwo() {
-    let randomNumGenerator = Math.floor(Math.random() * 1001) + 101;
+    let randomNumGenerator = Math.floor(Math.random() * 900) + 101;
     numbers.push(randomNumGenerator);
     document.getElementById("answer-two").innerHTML = numbers;
 }
@@ -121,10 +121,10 @@ Ogift: Carl,Karin
 */
 
 const persons = [
-    { name: "Christian", age: 31, married: true },
-    { name: "Diana", age: 29, married: true },
-    { name: "Carl", age: 28, married: false },
-    { name: "Karin", age: 29, married: false },
+    { name: " Christian", age: 31, married: true },
+    { name: " Diana", age: 29, married: true },
+    { name: " Carl", age: 28, married: false },
+    { name: " Karin", age: 29, married: false },
 ];
 
 
@@ -137,8 +137,22 @@ const underThirty = [];
 
 
 
+
 function taskSix() {
-    alert("Replace this alert with a solution");
+    for (let key in persons) {
+        if (persons[key].age >= 30) {
+            overThirty.push(persons[key].name);
+        } else {
+            underThirty.push(persons[key].name);
+        }
+        if (persons[key].married === true) {
+            married.push(persons[key].name);
+        } else {
+            notMarried.push(persons[key].name);
+        }
+    }
+    document.getElementById("answer-six").innerHTML = "Över 30: " + overThirty + "<br>" + "Under 30: " + underThirty + "<br>" + "Gift: " + married + "<br>" + "Ogift: " + notMarried;
+
 }
 
 /*
