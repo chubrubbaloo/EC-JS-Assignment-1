@@ -127,32 +127,26 @@ const persons = [
     { name: " Karin", age: 29, married: false },
 ];
 
-
 const married = [];
 const notMarried = [];
 const overThirty = [];
 const underThirty = [];
 
-
-
-
-
+for (let key in persons) {
+    if (persons[key].age >= 30) {
+        overThirty.push(persons[key].name);
+    } else {
+        underThirty.push(persons[key].name);
+    }
+    if (persons[key].married === true) {
+        married.push(persons[key].name);
+    } else {
+        notMarried.push(persons[key].name);
+    }
+}
 
 function taskSix() {
-    for (let key in persons) {
-        if (persons[key].age >= 30) {
-            overThirty.push(persons[key].name);
-        } else {
-            underThirty.push(persons[key].name);
-        }
-        if (persons[key].married === true) {
-            married.push(persons[key].name);
-        } else {
-            notMarried.push(persons[key].name);
-        }
-    }
     document.getElementById("answer-six").innerHTML = "Över 30: " + overThirty + "<br>" + "Under 30: " + underThirty + "<br>" + "Gift: " + married + "<br>" + "Ogift: " + notMarried;
-
 }
 
 /*
