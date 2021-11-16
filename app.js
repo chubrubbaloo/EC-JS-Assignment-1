@@ -207,11 +207,22 @@ om någon av dessa conditions inte uppfylls ska du visa en alertbox med texten "
 */
 
 function calculator(valueOne, valueTwo, operator) {
-    alert("Replace this alert with a solution");
+    if (operator === "add") {
+        return alert(valueOne + valueTwo);
+    } else if (operator === "subtract") {
+        return alert(valueOne - valueTwo);
+    } else if (operator === "multiply") {
+        return alert(valueOne * valueTwo);
+    } else if (operator === "divide") {
+        return alert(valueOne / valueTwo);
+    } else {
+        return alert("Något är fel");
+    }
+
 }
 
 function taskTen() {
     //första och andra argumentet ska vara nummer, tredje argumentet ska
     //vara en sträng med något av värdena "add", "subtract", "multiply", "divide"
-    calculator();
+    calculator(5, 5, "add");
 }
