@@ -11,7 +11,7 @@ function taskOne() {
         document.getElementById("answer-one").style.backgroundColor = "red";
         blue = true;
     } else {
-        document.getElementById("answer-one").style.backgroundColor = "blue";
+        document.getElementById("answer-one").style.backgroundColor = "white";
         blue = false;
     }
 
@@ -99,7 +99,7 @@ for (let i = 0; i < fruits.length; i++) {
 }
 
 function taskFive() {
-    document.getElementById("answer-five").innerHTML = "<b>Ätligt: " + eatable + "<br>" + "Skräp: " + trash + "</b>";
+    document.getElementById("answer-five").innerHTML = "<p>" + "<b>Ätligt: </b> " + eatable + "<br>" + "<b>Skräp: </b>" + trash + "</p>";
 }
 
 /*
@@ -146,7 +146,7 @@ for (let key in persons) {
 }
 
 function taskSix() {
-    document.getElementById("answer-six").innerHTML = "<b>Över 30: " + overThirty + "<br>" + "Under 30: " + underThirty + "<br>" + "Gift: " + married + "<br>" + "Ogift: " + notMarried + "</b>";
+    document.getElementById("answer-six").innerHTML = "<p>" + "<b>Över 30:</b>" + overThirty + "<br>" + "<b>Under 30: </b>" + underThirty + "<br>" + "<b>Gift: </b>" + married + "<br>" + "<b>Ogift: </b>" + notMarried + "</p>";
 }
 
 /*
