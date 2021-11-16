@@ -183,7 +183,7 @@ answer-container till blå, annars ska den ändras till röd
 function taskNine() {
     let currentTime = new Date().getHours();
     let elements = document.getElementsByClassName("answer-container");
-    for (var i = 0; i < elements.length; i++) {
+    for (let i = 0; i < elements.length; i++) {
         if (currentTime > 17) {
             elements[i].style.backgroundColor = "red";
         } else {
