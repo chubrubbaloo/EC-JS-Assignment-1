@@ -207,16 +207,22 @@ om någon av dessa conditions inte uppfylls ska du visa en alertbox med texten "
 */
 
 function calculator(valueOne, valueTwo, operator) {
-    if (operator === "add") {
-        return alert(valueOne + valueTwo);
-    } else if (operator === "subtract") {
-        return alert(valueOne - valueTwo);
-    } else if (operator === "multiply") {
-        return alert(valueOne * valueTwo);
-    } else if (operator === "divide") {
-        return alert(valueOne / valueTwo);
-    } else {
-        return alert("Något är fel");
+    switch (operator) {
+        case "add":
+            return alert(valueOne + valueTwo);
+
+        case "subtract":
+            return alert(valueOne - valueTwo);
+
+        case "multiply":
+            return alert(valueOne * valueTwo);
+
+        case "divide":
+            return alert(valueOne / valueTwo);
+
+        default:
+            return alert("Något är fel")
+
     }
 
 }
