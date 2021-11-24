@@ -8,7 +8,7 @@ let blue = false;
 
 function taskOne() {
     if (blue === false) {
-        document.getElementById("answer-one").style.backgroundColor = "red";
+        document.getElementById("answer-one").style.backgroundColor = "blue";
         blue = true;
     } else {
         document.getElementById("answer-one").style.backgroundColor = "white";
