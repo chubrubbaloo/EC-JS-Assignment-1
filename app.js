@@ -61,8 +61,6 @@ eller båda värdena inte är ett nummer ska en alertbox med meddelandet "Jag ka
 */
 
 function multiplier(valueOne, valueTwo, sum) {
-    valueOne = 10;
-    valueTwo = 10;
     sum = valueOne * valueTwo;
     if (isNaN(valueOne) || isNaN(valueTwo)) {
         alert("Jag kan bara multiplicera nummer.");
@@ -72,7 +70,7 @@ function multiplier(valueOne, valueTwo, sum) {
 }
 
 function taskFour() {
-    multiplier();
+    multiplier(10, 10);
 }
 
 /*
