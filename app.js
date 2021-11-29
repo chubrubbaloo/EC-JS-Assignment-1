@@ -7,7 +7,7 @@ för diven med id answer-one när man klickar på knappen
 let blue = false;
 
 function taskOne() {
-    if (blue === false) {
+    if (!blue) {
         document.getElementById("answer-one").style.backgroundColor = "blue";
         blue = true;
     } else {
@@ -41,8 +41,7 @@ inte är helg ska du trigga en alert med meddelandet "FML"
 */
 
 function taskThree() {
-    const d = new Date();
-    let dayOfTheWeek = d.getDay();
+    let dayOfTheWeek = new Date().getDay();
 
     if (dayOfTheWeek === 6 || dayOfTheWeek === 0) {
         alert("Woohooo it's weekend!")
